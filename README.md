@@ -12,7 +12,7 @@ Member :
 Web ini adalah web untuk mengelola data siswa seperti menambah, memperbarui, dan menghapus data siswa
 
 Language :
-- EJS (frontend)
+- EJS & Bootstrap (frontend)
 - NodeJS express (backend)
 - Postgresql (database)
 
