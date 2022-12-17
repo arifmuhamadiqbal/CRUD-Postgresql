@@ -100,3 +100,14 @@ app.listen(3000);
 ```
 
 Jika program berjalan maka artinya database sudah terkoneksi dengan backend, jika belum maka periksalah errornya
+
+## References & Links :
+
+https://hub.docker.com/_/postgres
+
+https://www.postgresqltutorial.com/postgresql-tutorial
+
+https://www.pgadmin.org
+
+
+
