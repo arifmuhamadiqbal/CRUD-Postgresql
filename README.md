@@ -49,7 +49,7 @@ Kemudian isi nama server
 
 ![image](https://user-images.githubusercontent.com/114379198/208257455-17589643-314e-4210-8a25-3f1851fd0334.png)
 
-Setelah itu klik bagian connection lalu isi bagian bagian "Hostname/address","Port", "Username", dan "Password" sesuai dengan konfigurasi postgres yang sudah dibuat sebelumnya di docker
+Setelah itu klik bagian connection lalu isi bagian bagian "Hostname/address", "Port", "Username", dan "Password" sesuai dengan konfigurasi postgres yang sudah dibuat sebelumnya di docker
 
 ![image](https://user-images.githubusercontent.com/114379198/208257917-18db157f-3506-4bdf-9fcc-14ee09613bd6.png)
 
