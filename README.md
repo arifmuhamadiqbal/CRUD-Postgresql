@@ -9,4 +9,4 @@ Member :
 
 # Let's Started
 1. Pull Postgresql image on docker hub
-command :
+docker pull postgres/clipboard-copy-element
