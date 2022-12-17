@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <title>Group 7 Manajemen Basis Data</title>
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="/"><i class="fa-solid fa-school"></i>  Students Management</a>
+    </nav>
+    <main>
+        <div class="blank-space"></div>
+        <div class="container-fluid px-4">
+            <h1 class="mt-4">Students</h1>
+            <!--Rooms Data-->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    All Student <a href="/formtambah" class="btn btn-info ms-5 fw-bold text-white">Add</a>
+                </div>
+                <div class="card-body">
+                    <table id="datatablesSimple">
+                        <thead>
+                            <tr>
+                                <th>NIM</th>
+                                <th>Nama</th>
+                                <th>Kelas</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% data.forEach((datas,index)=> { %>
+                                <tr>
+                                    <td>
+                                        <%= datas.nim %>
+                                    </td>
+                                    <td>
+                                        <%= datas.nama %>
+                                    </td>
+                                    <td>
+                                        <%= datas.kelas %>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <a href="/delete/<%= datas.nim  %>" class="btn btn-danger badge ms-5 px-4"
+                                                onclick="return confirm(`Apakah anda yakin?`)">Delete</a>
+                                            <a href="/update/<%= datas.nim  %>"
+                                                class="btn btn-success badge px-4">Update</a>
+                                        </center>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; Group 7 Manajemen Basis Data A</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="/js/datatables-simple-demo.js"></script>
+</body>
+
+</html>
