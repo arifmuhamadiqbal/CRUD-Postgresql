@@ -9,4 +9,5 @@ Member :
 
 # Let's Started
 1. Pull Postgresql image on docker hub
-docker pull postgres/clipboard-copy-element
+
+$ docker pull postgres/clipboard-copy-element
