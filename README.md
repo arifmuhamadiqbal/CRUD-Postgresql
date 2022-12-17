@@ -77,7 +77,7 @@ Auto install all when you pull this project :
 npm i
 ```
 
-Create connection
+Create connection :
 ```js
 const express = require("express);
 const cors = require("cors");
